@@ -1,0 +1,2 @@
+python ../manage.py compilemessages
+python ../manage.py makemessages -l cz

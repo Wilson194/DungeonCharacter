@@ -42,6 +42,8 @@ class DrDCharacter(Character):
         return 'DrDCharacter'
 
 
+
+
 class DrDMonsterKind(MonsterTemplate):
     viability = models.FloatField(null=False, verbose_name=_('Viability'))
 
@@ -57,7 +59,8 @@ class DrDMonsterKind(MonsterTemplate):
 
     # TODO: Zranitelnost
 
-    mobility_type = models.CharField(max_length=3, null=False, choices=MonsterClass.choices, verbose_name=_('Mobility type'))
+    mobility_type = models.CharField(max_length=3, null=False, choices=MonsterClass.choices,
+                                     verbose_name=_('Mobility type'))
     mobility = models.IntegerField(null=False, verbose_name=_('Mobility'))
 
     perseverance_type = models.CharField(max_length=3, null=False, choices=MonsterClass.choices,
@@ -90,10 +93,19 @@ class DrDMonsterAttack(models.Model):
 class DrDItem(Item):
     weight = models.IntegerField(null=False, verbose_name=_('Weigh'))
     price = models.IntegerField(null=False, verbose_name=_('Price'))
+    quantity = models.IntegerField(default=1, verbose_name=_('Quantity'))
 
     class Meta:
         verbose_name = _("Item")
         verbose_name_plural = _("Items")
+
+
+class DrDAmmunition(DrDItem):
+    strength = models.IntegerField(null=False, verbose_name=_('Strength'))
+
+    class Meta:
+        verbose_name = _('Ammunition')
+        verbose_name_plural = _('Ammunition')
 
 
 class DrDWeapon(DrDItem):
@@ -150,16 +162,25 @@ class DrDContainer(DrDItem):
 
 
 class DrDCharacterEquipment(CharacterEquipment):
-    left_hand = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Left hand'), related_name='+')
-    right_hand = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Right hand'), related_name='+')
+    left_hand = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Left hand'),
+                                  related_name='+', blank=True)
+    right_hand = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Right hand'),
+                                   related_name='+', blank=True)
 
-    head = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Head'), related_name='+')
-    torso = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Torso'), related_name='+')
-    back = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Back'), related_name='+')
-    hands = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Hands'), related_name='+')
-    belt = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Belt'), related_name='+')
-    legs = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Legs'), related_name='+')
-    feet = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Feet'), related_name='+')
+    head = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Head'), related_name='+',
+                             blank=True)
+    torso = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Torso'), related_name='+',
+                              blank=True)
+    back = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Back'), related_name='+',
+                             blank=True)
+    hands = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Hands'), related_name='+',
+                              blank=True)
+    belt = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Belt'), related_name='+',
+                             blank=True)
+    legs = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Legs'), related_name='+',
+                             blank=True)
+    feet = models.ForeignKey(DrDItem, on_delete=models.SET_NULL, null=True, verbose_name=_('Feet'), related_name='+',
+                             blank=True)
 
     class Meta:
         verbose_name = _('Character equipment')

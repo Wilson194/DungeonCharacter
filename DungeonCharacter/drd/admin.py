@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 from DungeonCharacter.drd.models import DrDMonsterKind, DrDItem, DrDArmor, DrDWeapon, DrDRangeWeapon, DrDMonsterAttack, \
-    DrDCharacter, DrDCharacterEquipment, DrDContainer
+    DrDCharacter, DrDCharacterEquipment, DrDContainer, DrDAmmunition
 
 admin.site.register(DrDCharacter)
 admin.site.register(DrDMonsterKind)
@@ -13,3 +13,4 @@ admin.site.register(DrDRangeWeapon)
 admin.site.register(DrDMonsterAttack)
 admin.site.register(DrDCharacterEquipment)
 admin.site.register(DrDContainer)
+admin.site.register(DrDAmmunition)

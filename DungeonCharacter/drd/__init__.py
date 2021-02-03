@@ -1,0 +1,2 @@
+GAME_TYPE_ID = 'DRD'
+GAME_TYPE_NAME = 'Dračí Doupě'

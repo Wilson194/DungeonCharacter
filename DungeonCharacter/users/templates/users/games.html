@@ -1,0 +1,40 @@
+{% extends "main/base.html" %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+{% load dict_extra %}
+{% block content %}
+    <div class="content-section">
+
+
+        <div class="nav nav-tabs mb-4" role="tablist">
+            <a class="nav-item nav-link" href="{% url 'profile' %}">{% translate 'Profile' %}</a>
+            <a class="nav-item nav-link" href="{% url 'characters' %}">{% translate 'Characters' %}</a>
+            <a class="nav-item nav-link active" href="{% url 'games' %}">{% translate 'Games' %}</a>
+        </div>
+
+
+        {% for game in games %}
+            <article class="media content-section pb-0">
+                <img class="rounded-circle article-img" alt="{{ game.name }}" src="{{ game.image.url }}">
+                <div class="media-body">
+                    <div class="article-metadata">
+                        {% if game.owner == user %}
+                            <a class="mr-2" href="">PJ</a>
+                            <small class="text-muted">{{ game.created }}</small>
+                        {% elif characters|get:game.pk %}
+                            <a class="mr-2" href="">{% with characters|get:game.id as ch %} {{ch.name}} {% endwith %}</a>
+                            <small class="text-muted">{{ game.created }}</small>
+                        {% else %}
+                            <a class="mr-2" href="">No character</a>
+                            <small class="text-muted">{{ game.created }}</small>
+                        {% endif %}
+
+                    </div>
+                    <h2><a class="article-title" href="">{{ game.name }}</a></h2>
+
+                </div>
+            </article>
+
+        {% endfor %}
+    </div>
+{% endblock content %}

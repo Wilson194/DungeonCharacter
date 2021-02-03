@@ -1,0 +1,31 @@
+{% extends "main/base.html" %}
+{% load crispy_forms_tags %}
+{% load i18n %}
+{% block content %}
+    <div class="content-section">
+
+
+        <div class="nav nav-tabs mb-4" role="tablist">
+            <a class="nav-item nav-link" href="{% url 'profile' %}">{% translate 'Profile' %}</a>
+            <a class="nav-item nav-link active" href="{% url 'characters' %}">{% translate 'Characters' %}</a>
+            <a class="nav-item nav-link" href="{% url 'games' %}">{% translate 'Games' %}</a>
+        </div>
+
+
+        {% for character in characters %}
+            <article class="media content-section pb-0">
+                <img class="rounded-circle article-img" alt="{{ character.name }}" src="{{ character.image.url }}">
+                <div class="media-body">
+                    <div class="article-metadata">
+                        <a class="mr-2" href="">{{ character.game.name }}</a>
+                        <small class="text-muted">{{ character.modified }}</small>
+                        <span class="badge badge-pill badge-danger" style="float: right;">Dead</span>
+                    </div>
+                    <h2><a class="article-title" href="">{{ character.name }}</a></h2>
+
+                </div>
+            </article>
+
+        {% endfor %}
+    </div>
+{% endblock content %}

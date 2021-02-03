@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 10:56+0000\n"
+"POT-Creation-Date: 2021-01-26 22:12+0100\n"
 "PO-Revision-Date: 2021-01-05 11:58+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,431 +17,489 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: drd/enums.py:6
+#: .\drd\enums.py:6
 msgid "Human"
 msgstr "Člověk"
 
-#: drd/enums.py:7
+#: .\drd\enums.py:7
 msgid "Dwarf"
 msgstr "Trpaslík"
 
-#: drd/enums.py:8
+#: .\drd\enums.py:8
 msgid "Elf"
 msgstr "Elf"
 
-#: drd/enums.py:9
+#: .\drd\enums.py:9
 msgid "Kroll"
 msgstr "Kroll"
 
-#: drd/enums.py:10
+#: .\drd\enums.py:10
 msgid "Kuduk"
 msgstr "Kuduk"
 
-#: drd/enums.py:11
+#: .\drd\enums.py:11
 msgid "Barbar"
 msgstr "Barbar"
 
-#: drd/enums.py:12
+#: .\drd\enums.py:12
 msgid "Hobbit"
 msgstr "Hobit"
 
-#: drd/enums.py:16
+#: .\drd\enums.py:16
 msgid "Warrior"
 msgstr "Válečník"
 
-#: drd/enums.py:17
+#: .\drd\enums.py:17
 msgid "Guard"
 msgstr "Hraničář"
 
-#: drd/enums.py:18
+#: .\drd\enums.py:18
 msgid "Wizard"
 msgstr "Kouzelník"
 
-#: drd/enums.py:19
+#: .\drd\enums.py:19
 msgid "Thief"
 msgstr "Zloděj"
 
-#: drd/enums.py:20
+#: .\drd\enums.py:20
 msgid "Alchemist"
 msgstr "Alchymista"
 
-#: drd/enums.py:24
+#: .\drd\enums.py:24
 msgid "Lawful good"
 msgstr "Zákonné dobro"
 
-#: drd/enums.py:25
+#: .\drd\enums.py:25
 msgid "Confused goodness"
 msgstr "Zmatené dobro"
 
-#: drd/enums.py:26
+#: .\drd\enums.py:26
 msgid "Neutral"
 msgstr "Neutrální"
 
-#: drd/enums.py:27
+#: .\drd\enums.py:27
 msgid "Confused evil"
 msgstr "Zmatené zlo"
 
-#: drd/enums.py:28
+#: .\drd\enums.py:28
 msgid "Lawful evil"
 msgstr "Zákonné zlo"
 
-#: drd/enums.py:42
+#: .\drd\enums.py:42
 msgid "Humanoid"
 msgstr "Člověk"
 
-#: drd/enums.py:43
+#: .\drd\enums.py:43
 msgid "Animal"
 msgstr "Zvíře"
 
-#: drd/enums.py:44
+#: .\drd\enums.py:44
 msgid "Best"
 msgstr "Šelma"
 
-#: drd/enums.py:45
+#: .\drd\enums.py:45
 msgid "Dragon"
 msgstr "Drak"
 
-#: drd/enums.py:46
+#: .\drd\enums.py:46
 msgid "Reptile"
 msgstr "Plaz"
 
-#: drd/enums.py:47
+#: .\drd\enums.py:47
 msgid "Insect"
 msgstr "Hmyz"
 
-#: drd/enums.py:48
+#: .\drd\enums.py:48
 msgid "Aquatic creature"
 msgstr "Vodní tvor"
 
-#: drd/enums.py:49
+#: .\drd\enums.py:49
 msgid "Winged"
 msgstr "Okřídlenec"
 
-#: drd/enums.py:50
+#: .\drd\enums.py:50
 msgid "Magic creature"
 msgstr "Magický tvor"
 
-#: drd/enums.py:54
+#: .\drd\enums.py:54
 msgid "Light"
 msgstr "Lehké"
 
-#: drd/enums.py:55
+#: .\drd\enums.py:55
 msgid "Middle"
 msgstr "Střední"
 
-#: drd/enums.py:56
+#: .\drd\enums.py:56
 msgid "Heavy"
 msgstr "Těžké"
 
-#: drd/models.py:9
+#: .\drd\models.py:9
 msgid "Race"
 msgstr "Rasa"
 
-#: drd/models.py:10
+#: .\drd\models.py:10
 msgid "Profession"
 msgstr "Povolání"
 
-#: drd/models.py:13
+#: .\drd\models.py:13
 msgid "Conviction"
 msgstr "Přesvědčení"
 
-#: drd/models.py:14
+#: .\drd\models.py:14
 msgid "Height"
 msgstr "Výška"
 
-#: drd/models.py:15 drd/models.py:91
+#: .\drd\models.py:15 .\drd\models.py:94
 msgid "Weigh"
 msgstr "Váha"
 
-#: drd/models.py:16 drd/models.py:55
+#: .\drd\models.py:16 .\drd\models.py:57
 msgid "Size"
 msgstr "Velikost"
 
-#: drd/models.py:19
+#: .\drd\models.py:19
 msgid "Level"
 msgstr "Levl"
 
-#: drd/models.py:20 drd/models.py:68
+#: .\drd\models.py:20 .\drd\models.py:71
 msgid "Experience"
 msgstr "Zkušenosti"
 
-#: drd/models.py:23 drd/models.py:100 drd/models.py:114
+#: .\drd\models.py:23 .\drd\models.py:104 .\drd\models.py:112
+#: .\drd\models.py:126
 msgid "Strength"
 msgstr "Síla"
 
-#: drd/models.py:24 drd/models.py:51
+#: .\drd\models.py:24 .\drd\models.py:53
 msgid "Dexterity"
 msgstr "Obratnost"
 
-#: drd/models.py:25
+#: .\drd\models.py:25
 msgid "Immunity"
 msgstr "Odolnost"
 
-#: drd/models.py:26 drd/models.py:67
+#: .\drd\models.py:26 .\drd\models.py:70
 msgid "Intelligence"
 msgstr "Inteligence"
 
-#: drd/models.py:27
+#: .\drd\models.py:27
 msgid "Charisma"
 msgstr "Charisma"
 
-#: drd/models.py:30
+#: .\drd\models.py:30
 msgid "Live current"
 msgstr "Aktuální množství životů"
 
-#: drd/models.py:31
+#: .\drd\models.py:31
 msgid "Live maximum"
 msgstr "Maximální množství životů"
 
-#: drd/models.py:34
+#: .\drd\models.py:34
 msgid "Mag current"
 msgstr "Aktuální množství many"
 
-#: drd/models.py:35
+#: .\drd\models.py:35
 msgid "Mag maximum"
 msgstr "Maximální množství many"
 
-#: drd/models.py:38 main/models.py:109
+#: .\drd\models.py:38 .\drd_api\views.py:90 .\main\models.py:163
 msgid "Character"
 msgstr "Postava"
 
-#: drd/models.py:39
+#: .\drd\models.py:39
 msgid "Characters"
 msgstr "Postavy"
 
-#: drd/models.py:46
+#: .\drd\models.py:48
 msgid "Viability"
 msgstr "Životaschopnost"
 
-#: drd/models.py:49
+#: .\drd\models.py:51
 msgid "Attack"
 msgstr "Útočné číslo"
 
-#: drd/models.py:52
+#: .\drd\models.py:54
 msgid "Basic defense"
 msgstr "Základní obranné číslo"
 
-#: drd/models.py:54
+#: .\drd\models.py:56
 msgid "Endurance"
 msgstr "Odolnost"
 
-#: drd/models.py:56
+#: .\drd\models.py:58
 msgid "Pugnacity"
 msgstr "Bojovnost"
 
-#: drd/models.py:60
+#: .\drd\models.py:63
 msgid "Mobility type"
 msgstr "Druh pohyblivost"
 
-#: drd/models.py:61
+#: .\drd\models.py:64
 msgid "Mobility"
 msgstr "Pohyblivost"
 
-#: drd/models.py:64
+#: .\drd\models.py:67
 msgid "Perseverance type"
 msgstr "Druh vytrvalosti"
 
-#: drd/models.py:65
+#: .\drd\models.py:68
 msgid "Perseverance"
 msgstr "Vytrvalost"
 
-#: drd/models.py:71
+#: .\drd\models.py:74
 msgid "Monster kind"
 msgstr "Druh příšery"
 
-#: drd/models.py:72
+#: .\drd\models.py:75
 msgid "Monster kinds"
 msgstr "Druhy příšer"
 
-#: drd/models.py:76 main/models.py:11 main/models.py:33 main/models.py:59
-#: main/models.py:71 main/models.py:81 main/models.py:89
+#: .\drd\models.py:79 .\main\models.py:22 .\main\models.py:68
+#: .\main\models.py:97 .\main\models.py:109 .\main\models.py:119
+#: .\main\models.py:129 .\main\models.py:137
 msgid "Name"
 msgstr "Jméno"
 
-#: drd/models.py:79
+#: .\drd\models.py:82
 msgid "Aggression"
 msgstr "Agresivita"
 
-#: drd/models.py:80
+#: .\drd\models.py:83
 msgid "Attack number"
 msgstr "Útočné číslo"
 
-#: drd/models.py:81
+#: .\drd\models.py:84
 msgid "Default weapon attack"
 msgstr "Základní útok zbraně"
 
-#: drd/models.py:83
+#: .\drd\models.py:86
 msgid "Could use weapon"
 msgstr "Může použít zbraň"
 
-#: drd/models.py:86
+#: .\drd\models.py:89
 msgid "Monster attack"
 msgstr "Útok příšery"
 
-#: drd/models.py:87
+#: .\drd\models.py:90
 msgid "Monster attacks"
 msgstr "Útoky příšer"
 
-#: drd/models.py:92
+#: .\drd\models.py:95
 msgid "Price"
 msgstr "Cena"
 
-#: drd/models.py:95
+#: .\drd\models.py:96
+msgid "Quantity"
+msgstr "Množství"
+
+#: .\drd\models.py:99
 msgid "Item"
 msgstr "Předmět"
 
-#: drd/models.py:96
+#: .\drd\models.py:100
 msgid "Items"
 msgstr "Předměty"
 
-#: drd/models.py:101 drd/models.py:115
+#: .\drd\models.py:107 .\drd\models.py:108
+#, fuzzy
+#| msgid "Immunity"
+msgid "Ammunition"
+msgstr "Odolnost"
+
+#: .\drd\models.py:113 .\drd\models.py:127
 msgid "Rampancy"
 msgstr "Útočnost"
 
-#: drd/models.py:102
+#: .\drd\models.py:114
 msgid "Defense"
 msgstr "Obranné číslo"
 
-#: drd/models.py:103
+#: .\drd\models.py:115
 msgid "Length"
 msgstr "Síla"
 
-#: drd/models.py:105
+#: .\drd\models.py:117
 msgid "Weight type"
 msgstr "Váha"
 
-#: drd/models.py:106
+#: .\drd\models.py:118
 msgid "One handed"
 msgstr "Jednoruční"
 
-#: drd/models.py:109
+#: .\drd\models.py:121
 msgid "Weapon"
 msgstr "Zbraň"
 
-#: drd/models.py:110
+#: .\drd\models.py:122
 msgid "Weapons"
 msgstr "Zbraně"
 
-#: drd/models.py:116
+#: .\drd\models.py:128
 msgid "Range short"
 msgstr "Dostřel malý"
 
-#: drd/models.py:117
+#: .\drd\models.py:129
 msgid "Range middle"
 msgstr "Střední dostřel"
 
-#: drd/models.py:118
+#: .\drd\models.py:130
 msgid "Range far"
 msgstr "Zbraň velký"
 
-#: drd/models.py:119
+#: .\drd\models.py:131
 msgid "Throwing"
 msgstr "Vrhací"
 
-#: drd/models.py:122
+#: .\drd\models.py:134
 msgid "Range weapon"
 msgstr "Zbraň na dálku"
 
-#: drd/models.py:123
+#: .\drd\models.py:135
 msgid "Range weapons"
 msgstr "Zbraně na dálky"
 
-#: drd/models.py:127
+#: .\drd\models.py:139
 msgid "Quality"
 msgstr "Kvalita"
 
-#: drd/models.py:130
+#: .\drd\models.py:142
 msgid "Armor"
 msgstr "Brnění"
 
-#: drd/models.py:131
+#: .\drd\models.py:143
 msgid "Armors"
 msgstr "Brnění"
 
-#: drd/models.py:135
+#: .\drd\models.py:147
 msgid "Capacity"
 msgstr "Kapacita"
 
-#: drd/models.py:138
+#: .\drd\models.py:150
 msgid "Container"
 msgstr "Kontejner"
 
-#: drd/models.py:139
+#: .\drd\models.py:151
 msgid "Containers"
 msgstr "Kontejnery"
 
-#: drd/models.py:153
+#: .\drd\models.py:165
 msgid "Left hand"
 msgstr "Levá ruka"
 
-#: drd/models.py:154
+#: .\drd\models.py:167
 msgid "Right hand"
 msgstr "Pravá ruka"
 
-#: drd/models.py:156
+#: .\drd\models.py:170
 msgid "Head"
 msgstr "Hlava"
 
-#: drd/models.py:157
+#: .\drd\models.py:172
 msgid "Torso"
 msgstr "Tělo"
 
-#: drd/models.py:158
+#: .\drd\models.py:174
 msgid "Back"
 msgstr "Záda"
 
-#: drd/models.py:159
+#: .\drd\models.py:176
 msgid "Hands"
 msgstr "Ruce"
 
-#: drd/models.py:160
+#: .\drd\models.py:178
 msgid "Belt"
 msgstr "Opasek"
 
-#: drd/models.py:161
+#: .\drd\models.py:180
 msgid "Legs"
 msgstr "Nohy"
 
-#: drd/models.py:162
+#: .\drd\models.py:182
 msgid "Feet"
 msgstr "Chodidla"
 
-#: drd/models.py:165
+#: .\drd\models.py:186
 msgid "Character equipment"
 msgstr "Vybavení postavy"
 
-#: drd/models.py:166
+#: .\drd\models.py:187
 msgid "Character equipments"
 msgstr "Vybavení postav"
 
-#: main/models.py:12 main/models.py:90
+#: .\drd_api\views.py:89
+msgid "My characters"
+msgstr "Mé postavy"
+
+#: .\drd_api\views.py:91
+msgid "My games"
+msgstr "Mé světy"
+
+#: .\drd_api\views.py:92
+msgid "Game templates"
+msgstr "Šablony předmětů světa"
+
+#: .\drd_api\views.py:93
+msgid "Game chests"
+msgstr "Bedny ze světa"
+
+#: .\main\models.py:23 .\main\models.py:69 .\main\models.py:138
 msgid "Description"
 msgstr "Popis"
 
-#: main/models.py:13 main/models.py:35
+#: .\main\models.py:24 .\main\models.py:72
 msgid "Created"
 msgstr "Vytvořeno"
 
-#: main/models.py:15 main/models.py:34 main/models.py:60
+#: .\main\models.py:26
+msgid "Game type"
+msgstr "Typ světa"
+
+#: .\main\models.py:27 .\main\models.py:70 .\main\models.py:98
+#: .\main\models.py:111
 msgid "Owner"
 msgstr "Majitel"
 
-#: main/models.py:18 main/models.py:37
+#: .\main\models.py:31 .\main\models.py:75 .\main\models.py:113
+#: .\main\models.py:140
 msgid "Game"
 msgstr "Svět"
 
-#: main/models.py:19
+#: .\main\models.py:32
 msgid "Games"
 msgstr "Světy"
 
-#: main/models.py:63 main/models.py:73
+#: .\main\models.py:101 .\main\models.py:121
 msgid "Bestiary"
 msgstr "Bestiář"
 
-#: main/models.py:64
+#: .\main\models.py:102
 msgid "Bestiaries"
 msgstr "Bestiáře"
 
-#: main/models.py:91
-msgid "Template"
-msgstr "Šablona"
+#: .\main\models.py:115
+msgid "Visible"
+msgstr "Viditelné"
+
+#: .\main\models.py:144
+msgid "Inside"
+msgstr "Uvnitř"
+
+#: .\main\models.py:147
+msgid "Chest"
+msgstr "Truhla"
+
+#: .\users\templates\users\login.html:9 .\users\templates\users\login.html:13
+msgid "Login"
+msgstr "Přihlásit"
+
+#: .\users\templates\users\login.html:15
+msgid "Forgot Password?"
+msgstr "Zapomenuté heslo"
+
+#: .\users\templates\users\login.html:21
+msgid "Need An Account?"
+msgstr "Potřebujete účet?"
+
+#: .\users\templates\users\login.html:22
+msgid "Sign Up Now"
+msgstr "Registrujte se"

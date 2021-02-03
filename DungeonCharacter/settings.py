@@ -29,6 +29,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'DungeonCharacter.drd',
+    'DungeonCharacter.drd_api',
+    'DungeonCharacter.api',
+    'DungeonCharacter.main',
+    'DungeonCharacter.users',
+    'crispy_forms',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -37,9 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework.authtoken',
-    'DungeonCharacter.drd',
-    'DungeonCharacter.api',
-    'DungeonCharacter.main'
+
 ]
 
 MIDDLEWARE = [
@@ -66,7 +70,12 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries': {
+                'custom_templatetag': 'DungeonCharacter.users.templatetags.dict_extra',
+
+            }
         },
+
     },
 ]
 
@@ -120,10 +129,25 @@ LOCALE_PATHS = [os.path.join(BASE_DIR, 'DungeonCharacter', 'locale')]
 
 STATIC_URL = '/static/'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'main', 'static'),
+]
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'DungeonCharacter', 'media')
+MEDIA_URL = '/media/'
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
     ]
 }
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+AUTH_USER_MODEL = 'users.DungeonUser'
+LOGIN_URL = 'profile/login'
+LOGIN_REDIRECT_URL = '/profile'

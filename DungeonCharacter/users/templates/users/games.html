@@ -22,7 +22,7 @@
                             <a class="mr-2" href="">PJ</a>
                             <small class="text-muted">{{ game.created }}</small>
                         {% elif characters|get:game.pk %}
-                            <a class="mr-2" href="">{% with characters|get:game.id as ch %} {{ch.name}} {% endwith %}</a>
+                            <a class="mr-2" href="">{% with characters|get:game.id as ch %} {{ ch.name }} {% endwith %}</a>
                             <small class="text-muted">{{ game.created }}</small>
                         {% else %}
                             <a class="mr-2" href="">No character</a>
@@ -34,6 +34,9 @@
 
                 </div>
             </article>
+
+        {% empty %}
+            <h3>{% translate "You are not invited to any game or own any game yet!" %}</h3>
 
         {% endfor %}
     </div>
